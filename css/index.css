@@ -107,6 +107,19 @@
 .swiper-container .swiper-pagination {
 	bottom: 30px !important;
 }
+/*表单控件错误样式*/
+label.error{
+	position: absolute;
+	text-align: center;
+	font-size: 12px;
+	width: 94px;
+	height: 23px;
+	line-height: 16px;
+	top: 8px;
+	right: 1px;
+	color: #2984e1;
+	background: url(../img/tip.png) no-repeat center;
+}
 
 
 /*新闻列表样式*/

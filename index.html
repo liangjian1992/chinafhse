@@ -96,10 +96,10 @@
 
 			</div>
 			<div class="login-form pa">
-				<form action="" method="post">
+				<form action="/" method="post">
 					<h3>登录</h3>
-					<p><input type="text" placeholder="请输入用户名" /></p>
-					<p><input type="password" placeholder="请输入密码" /></p>
+					<p class="pr"><input type="text" name="username" id="username" placeholder="请输入用户名" /></p>
+					<p class="pr"><input type="password" name="password" id="password" placeholder="请输入密码" /></p>
 					<p>
 						<a href="#" class="fr">忘记密码?</a><input type="checkbox" name="" id="checkbox" value="" /> <label for="checkbox">15天免登录</label></p>
 					<p><button>立即登录</button></p>
@@ -292,30 +292,64 @@
 
 		<script src="./js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			//banner轮播
-			var bannerSwiper = new Swiper('.swiper-container', {
-				autoplay: 5000, //可选选项，自动滑动
-				pagination: '.swiper-pagination',
-				paginationClickable: true,
-				prevButton: '.swiper-button-prev',
-				nextButton: '.swiper-button-next',
-				effect: 'fade',
-				fade: {
-					crossFade: false,
-				},
-				autoplayDisableOnInteraction: false,
-				loop: true
-			});
+			+ function($) {
+				//banner轮播
+				var bannerSwiper = new Swiper('.swiper-container', {
+					autoplay: 5000, //可选选项，自动滑动
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					prevButton: '.swiper-button-prev',
+					nextButton: '.swiper-button-next',
+					effect: 'fade',
+					fade: {
+						crossFade: false,
+					},
+					autoplayDisableOnInteraction: false,
+					loop: true
+				});
 
-			//师资团队轮播
-			var teamSwiper = new Swiper('.swiper-team', {
-				slidesPerView: 4,
-				loop: true,
-				prevButton: '.swiper-team-button-prev',
-				nextButton: '.swiper-team-button-next',
-			});
+				//师资团队轮播
+				var teamSwiper = new Swiper('.swiper-team', {
+					slidesPerView: 4,
+					loop: true,
+					prevButton: '.swiper-team-button-prev',
+					nextButton: '.swiper-team-button-next',
+				});
+
+				//表单验证
+				$('form').validate({
+					onfocusout: function(element) {
+						$(element).valid();
+					},
+					onkeyup: false,
+					rules: {
+						username: {
+							required: true,
+							remote: {
+								url: "test.php", //后台处理程序
+								type: "post", //数据发送方式
+								dataType: "json", //接受数据格式   
+								data: { //要传递的数据
+									username: function() {
+										return $("#username").val();
+									}
+								}
+							}
+						},
+						password: "required"
+					},
+					messages: {
+						username: {
+							required: '请输入用户名',
+							remote: '用户名错误'
+						},
+						password: "请输入密码"
+					}
+				});
+			}(jQuery)
 		</script>
 	</body>
 
