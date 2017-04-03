@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+/*登录样式*/
+
+.container {
+	width: 1060px;
+	margin: 0 auto;
+}
+
+
+/*头部样式*/
+
+.header {
+	height: 90px;
+	line-height: 90px;
+	border-bottom: 1px solid #ccc;
+}
+
+.header h1 {
+	margin-top: 15px;
+}
+
+.header p {
+	height: 36px;
+	line-height: 36px;
+	margin-top: 25px;
+	font-size: 12px;
+}
+
+.header p a {
+	display: inline-block;
+	background: #2984e1;
+	height: 36px;
+	color: #fff;
+	padding: 0 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+	margin-right: 50px;
+}
+
+
+/*主体样式*/
+
+.main {
+	min-height: 700px;
+	background: url(../img/bg_reg.png) no-repeat 232px center;
+	background-color: #eee;
+}
+
+.main .detail {
+	float: right;
+	margin-top: 100px;
+	width: 508px;
+}
+
+.main h3 {
+	padding: 10px 0px;
+	font-size: 24px;
+	border-bottom: 2px solid #2984e1;
+	color: #2984e1;
+	text-align: center;
+	position: relative;
+}
+
+.main h3::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-top-color: #2984e1;
+	bottom: -16px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main button {
+	display: block;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	background: #2984e1;
+	width: 270px;
+	padding: 10px 0;
+	margin-left: 150px;
+}
+
+.main p {
+	height: 54px;
+	line-height: 54px;
+}
+
+.main p.notice {
+	text-align: center;
+	background: #fff4ce;
+	border: 1px solid #fec52b;
+	width: 100%;
+	font-size: 12px;
+	height: 38px;
+	line-height: 38px;
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+
+.main label {
+	display: inline-block;
+	font-size: 12px;
+	width: 150px;
+	text-align: right;
+}
+
+.main label span {
+	color: red;
+	margin-right: 4px;
+}
+
+.main label.label-checkbox {
+	width: inherit;
+}
+
+.main input {
+	width: 250px;
+	height: 38px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding-left: 10px;
+	outline: none;
+	font-size: 14px;
+}
+
+.main input[type=checkbox] {
+	width: 10px;
+	margin-left: 150px;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.main a {
+	font-size: 12px;
+	color: #2984e1;
+	margin-right: 90px;
+}
+
+
+/*底部样式*/
+
+.footer {
+	background: #eee;
+	font-size: 12px;
+	padding: 20px 0 20px;
+	color: #999;
+}
+
+.footer p {
+	clear: both;
+	text-align: center;
+}

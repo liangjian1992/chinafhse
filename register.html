@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+		<link rel="shortcut icon" href="img/favicon.png" />
+	</head>
+
+	<body>
+
+		<!--头部样式 start-->
+		<div class="header ">
+			<div class="container">
+				<div class="logo">
+					<h1 class="fl"><a href="index.html"><img src="img/l_logo.png"/></a>
+						<span><img src="img/slogan.png"/></span>
+					</h1>
+					<p class="fr">已经开通中安食品安全培训网账户?
+						<a href="login.html">登录</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--头部样式 end-->
+		<!--内容样式 start-->
+		<div class="main">
+			<div class="container">
+				<div class="detail">
+					<h3><a href="#" class="fl" data-id = "#individualForm">个人用户</a><a href="#" class="on fr" data-id = "#enterpriseForm">企业用户</a></h3>
+					<p class="notice"><img src="img/tips.png" /></p>
+					<div class="form-list">
+						<form action="" id="individualForm" class="none">
+							<p><label for="phone"><span>*</span>手机号：</label>
+								<input type="text" placeholder="请输入手机号" id="phone" /></p>
+							<p><label for="captcha"><span>*</span>验证码：</label>
+								<input type="password" placeholder="请输入验证码" id="captcha" /></p>
+							<p><label for="pass"><span>*</span>密码：</label>
+								<input type="password" placeholder="请填写密码" id="pass" /></p>
+							<p><label for="again"><span>*</span>确认密码：</label>
+								<input type="password" placeholder="请再次填写密码" id="again" /></p>
+							<p><label for=""><span>*</span>您所在区域：</label>
+								<select name="" id="">
+									<option value="">省</option>
+								</select>
+								<select name="" id="">
+									<option value="">市</option>
+								</select>
+								<select name="" id="">
+									<option value="">区</option>
+								</select>
+							</p>
+							<p><label for="idCard"><span>*</span>身份证号：</label>
+								<input type="text" placeholder="请输入身份证号" id="idCard" /></p>
+							<p><label for="username"><span>*</span>您的姓名：</label>
+								<input type="text" placeholder="您的真实名字" id="username" /></p>
+							<p class="btn"><button>立即登录</button></p>
+							<p><input type="checkbox" name="" id="checkbox" value="" checked /><label for="checkbox" class="label-checkbox">我已阅读并接受</label>
+								<a href="#" class="fr server-list">《服务条款》</a>
+							</p>
+
+						</form>
+						<form action="" id="enterpriseForm">
+							<h4>管理员信息</h4>
+							<p><label for="username"><span>*</span>用户名(管理员账号)：</label>
+								<input type="text" placeholder="请填写有效的邮箱地址" id="username" /></p>
+							<p><label for="password"><span>*</span>密码：</label>
+								<input type="password" placeholder="请填写密码" id="password" /></p>
+							<p><label for="again"><span>*</span>确认密码：</label>
+								<input type="password" placeholder="请再次填写密码" id="again" /></p>
+							<p><label for="enterprise"><span>*</span>企业名称：</label>
+								<input type="text" placeholder="请与企业营业执照注册名称保持一致" id="enterprise" /></p>
+							<p><label for=""><span>*</span>您所在区域：</label>
+								<select name="" id="">
+									<option value="">省</option>
+								</select>
+								<select name="" id="">
+									<option value="">市</option>
+								</select>
+								<select name="" id="">
+									<option value="">区</option>
+								</select>
+							</p>
+							<h4>学员信息</h4>
+							<p><label for="phone"><span>*</span>手机号(学员账号)：</label>
+								<input type="text" placeholder="请输入手机号" id="phone" /></p>
+							<p><label for="captcha"><span>*</span>验证码：</label>
+								<input type="text" placeholder="请输入验证码" id="captcha" /></p>
+							<p><label for="name"><span>*</span>学员姓名：</label>
+								<input type="text" placeholder="请输入学员姓名" id="name" /></p>
+							<p><label for="idCard"><span>*</span>身份证号：</label>
+								<input type="text" placeholder="请输入身份证号" id="idCard" /></p>
+							<p class="btn"><button>立即登录</button></p>
+							<p><input type="checkbox" name="" id="checkbox" value="" checked /><label for="checkbox" class="label-checkbox">我已阅读并接受</label>
+								<a href="#" class="fr server-list">《服务条款》</a>
+							</p>
+							<div class="help"><a href="#"><img src="img/to-b_help.png"/></a></div>
+						</form>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<!--内容样式 end-->
+		<!--底部样式 start-->
+		<div class="footer">
+			<div class="container">
+				<p>Copyright © 2016 中安汇金科技（北京）有限公司 版权所有</p>
+			</div>
+		</div>
+		<!--底部样式 end-->
+
+		<script src="./js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.main h3 a').on('click', function(e) {
+				e.preventDefault();
+				$(this).addClass('on').siblings().removeClass('on');
+				$(this.dataset.id).show().siblings().hide();
+			})
+		</script>
+	</body>
+
+</html>
