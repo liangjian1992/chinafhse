@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/*师资团队样式*/
+
+.teacher .container {
+	width: 1060px;
+	padding-bottom: 50px;
+}
+
+.teacher .teacher-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.teacher .teacher-list .item {
+	flex: 0;
+	min-width: 480px;
+	border: 1px solid transparent;
+	padding: 20px 10px;
+	margin-top: 50px;
+}
+
+.teacher .item img {
+	vertical-align: middle;
+}
+
+.teacher .item .title {
+	padding-right: 15px;
+	border-right: 1px dashed #ccc;
+}
+
+.teacher .item .detail {
+	margin-left: 150px;
+}
+
+.teacher .detail h4 {
+	font-size: 18px;
+	height: 36px;
+	line-height: 36px;
+}
+
+.teacher .detail p {
+	line-height: 24px;
+}
+
+.teacher .item:hover {
+	border-color: #ccc;
+}

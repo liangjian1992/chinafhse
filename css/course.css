@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/*课程详情列表展示*/
+
+.course {
+	margin-top: 20px;
+}
+
+.course .container {
+	width: 1060px;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+
+.course .container div {
+	flex: 0;
+	margin-bottom: 65px;
+}

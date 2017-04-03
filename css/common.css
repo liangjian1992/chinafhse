@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+/*版心*/
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+
+/*字体*/
+
+html,
+body {
+	font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+	overflow-x: hidden;
+}
+
+
+/*公共在线客服样式*/
+
+.online {
+	position: fixed;
+	width: 40px;
+	height: 160px;
+	background: #348eea;
+	right: 0;
+	top: 50%;
+	z-index: 1001;
+	transform: translateY(-50%);
+	border-radius: 3px 0 0 3px;
+	cursor: pointer;
+}
+
+.online .panel {
+	background: #fff;
+	z-index: 1100;
+	width: 124px;
+	height: 210px;
+	border: 1px solid #348eea;
+	border-radius: 3px;
+	position: absolute;
+	padding: 0 10px;
+	top: 0;
+	right: -150px;
+	transition: all 0.5s;
+}
+
+.online .panel.fade {
+	right: 0;
+}
+
+.online .panel h4 {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px dashed #ccc;
+	color: #348eea;
+	padding-left: 30px;
+}
+
+.online .panel p {
+	line-height: 38px;
+	height: 38px;
+	margin-left: 25px;
+	color: #727466;
+}
+
+.online .enter {
+	background: url(../img/backgrounds.32.png) no-repeat 0 0;
+	width: 26px;
+	height: 132px;
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.online .panel p i.zixun,
+.online .panel p i.zhichi {
+	display: inline-block;
+	width: 30px;
+	height: 22px;
+	line-height: 18px;
+	text-align: center;
+	margin-left: 10px;
+	vertical-align: middle;
+	font-style: normal;
+	color: #fff;
+}
+
+.online .panel i.zixun {
+	background: url(../img/backgrounds.32.png) no-repeat -342px 0;
+}
+
+.online .panel i.zhichi {
+	background: url(../img/backgrounds.32.png) no-repeat -265px 0;
+}
+
+
+/*面包屑导航样式*/
+
+.breadcrumb {
+	margin-top: 10px;
+}
+
+.breadcrumb .container {
+	width: 1060px;
+	height: 44px;
+	line-height: 44px;
+	border-bottom: 1px solid #ccc;
+}
+
+.breadcrumb a {
+	color: #598ee2;
+}
+
+.menu .container {
+	width: 1060px;
+}
+
+
+/*分页功能样式*/
+
+.pagination {
+	height: 60px;
+	line-height: 60px;
+}
+
+.pagination .container {
+	width: 1060px;
+	text-align: center;
+	position: relative;
+}
+
+.pagination ul {
+	position: absolute;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+.pagination ul li {
+	float: left;
+	height: 20px;
+	line-height: 20px;
+}
+
+.pagination li.disabled {
+	display: none;
+}
+
+.pagination li a {
+	display: block;
+	padding: 0 5px;
+	border-radius: 3px;
+}
+
+.pagination li.active a {
+	background: #0b57a3;
+	color: #fff;
+}
+
+.menu ul {
+	border: 1px solid #ccc;
+	padding: 0 10px;
+}
+
+.menu ul li {
+	border-bottom: 1px solid #ccc;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 10px;
+	font-weight: bold;
+}
+
+.menu ul li:last-child {
+	border-bottom: none;
+}
+
+.menu ul a {
+	color: #666666;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 10px;
+	margin: 0 10px;
+	vertical-align: middle;
+	border-radius: 3px;
+}
+
+.menu ul .active {
+	color: #fff;
+	background: #0b57a3;
+}
+
+
+/*公共头部样式*/
+
+.common-header {
+	height: 100px;
+}
+
+.common-header .logo h1 {
+	width: 217px;
+	height: 67px;
+	background: url(../img/logo.png) no-repeat center;
+	text-indent: -1000px;
+	margin-top: 17px;
+	margin-left: 45px;
+}
+
+.common-header .call-us {
+	margin-top: 33px;
+	width: 240px;
+	color: #2984e1;
+	font-size: 16px;
+}
+
+.common-header .call-us dt {
+	display: block;
+	height: 40px;
+	width: 40px;
+	background: url(../img/icon_phone.png) no-repeat center;
+	text-indent: 1000px;
+	margin-right: 10px;
+	font-size: 13px;
+}
+
+.common-header .call-us dd+dd {
+	margin-top: 8px;
+}
+
+
+/*公共导航样式*/
+
+.common-nav {
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	background: #2984e1;
+}
+
+.common-nav li {
+	float: left;
+	width: 120px;
+	position: relative;
+}
+
+.common-nav li:hover {
+	background: #1670cc;
+}
+
+.common-nav li a::after {
+	content: '';
+	display: none;
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	width: 24px;
+	height: 15px;
+	background: url(../img/hot.png) no-repeat center;
+}
+
+.common-nav li.hot a::after {
+	display: block;
+}
+
+.common-nav .container {
+	padding-left: 45px;
+}
+
+.common-nav .active {
+	background: #1670cc;
+}
+
+.common-nav img {
+	vertical-align: middle;
+}
+
+.common-nav a {
+	color: #fff;
+	padding: 0 10px;
+}
+
+.common-nav .login {
+	margin-right: 45px;
+}
+
+
+/*公共底部样式*/
+
+.footer {
+	padding: 30px 0;
+	background: #2e2e2e;
+	color: #999996;
+}
+
+.footer .container {
+	width: 1060px;
+}
+
+.footer a {
+	color: #999996;
+	padding: 0 5px;
+}
+
+.footer a+a {
+	border-left: 1px solid #999996;
+}
+
+.footer p {
+	line-height: 42px;
+	margin-left: 55px;
+}
+
+.footer .footer-logo {
+	margin-right: 10px;
+}
