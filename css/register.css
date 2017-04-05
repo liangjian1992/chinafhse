@@ -104,6 +104,7 @@
 .main p {
 	height: 54px;
 	line-height: 54px;
+	position: relative;
 }
 
 .main a.server-list {
@@ -172,6 +173,31 @@
 	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+
+/*注册表单验证样式*/
+
+label.error {
+	position: absolute;
+	top: 0;
+	right: -70px;
+	color: red;
+	text-align: left;
+	height: 24px;
+	line-height: 12px;
+	margin-top: 18px;
+}
+
+label.success {
+	position: absolute;
+	top: 0;
+	right: -70px;
+	color: green;
+	text-align: left;
+	height: 24px;
+	line-height: 12px;
+	margin-top: 18px;
 }
 
 

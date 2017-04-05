@@ -141,6 +141,15 @@
 	margin-right: 90px;
 }
 
+/*登录验证演示*/
+label.error{
+	position: absolute;
+	color: red;
+	right: -70px;
+	top: 0;
+	text-align: left;
+}
+
 
 /*底部样式*/
 

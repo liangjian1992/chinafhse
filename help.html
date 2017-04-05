@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>中安食品安全培训网</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/certificate.css" />
+		<link rel="shortcut icon" href="img/favicon.png" />
+	</head>
+
+	<body>
+		<!--公共部分 在线客服 start-->
+		<div class="online">
+			<div class="enter"></div>
+			<div class="panel">
+				<h4><span class="close fr">X</span>在线客服</h4>
+				<p>客服咨询<i class="zixun">月月</i></p>
+				<p>技术支持<i class="zhichi">哲哲</i></p>
+				<p>技术支持<i class="zhichi">克克</i></p>
+			</div>
+		</div>
+		<!--公共部分 在线客服 end-->
+		<!--公共头部 start-->
+		<div class="common-header clearfix">
+			<div class="container">
+				<div class="logo fl">
+					<a href="javascript:;">
+						<h1>中安食品安全培训网</h1>
+					</a>
+				</div>
+				<div class="call-us fr">
+					<dl>
+						<dt class="fl">call</dt>
+						<dd>
+							<strong>400-678-9911</strong>
+						</dd>
+						<dd>周一至周五9:00--17:30</dd>
+					</dl>
+				</div>
+			</div>
+
+		</div>
+		<!--公共头部 end-->
+		<!--公共导航 start-->
+		<div class="common-nav">
+			<div class="container">
+				<div class="nav fl">
+					<ul>
+						<li class="active">
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="course.html">课程中心</a>
+						</li>
+						<li>
+							<a href="teacher.html">师资力量</a>
+						</li>
+						<li>
+							<a href="certificate.html">在线查询</a>
+						</li>
+						<li>
+							<a href="news.html">新闻法规</a>
+						</li>
+						<li class="hot">
+							<a href="#">学习指南</a>
+						</li>
+					</ul>
+				</div>
+				<div class="login fr">
+					<img src="./img/logreg.png" />
+					<a href="login.html">登录</a>|
+					<a href="register.html">注册</a>
+				</div>
+			</div>
+		</div>
+		<!--公共导航 end-->
+		<!--帮助内容 start-->
+		<div class="help">
+			<div class="container">
+				
+			</div>
+		</div>
+		<!--帮助内容 end-->
+		<!--公共底部 start-->
+		<div class="footer">
+			<div class="container clearfix">
+				<div class="content fl">
+					<p>
+						<a href="#">关于我们</a>
+						<a href="#">隐私协议</a>
+						<a href="#">联系我们</a>
+					</p>
+					<p>Copyright &copy; 2016 中安汇金科技（北京）有限公司 版权所有</p>
+				</div>
+				<div class="footer-logo fr">
+					<img src="img/logo_b.png" />
+				</div>
+			</div>
+		</div>
+		<!--公共底部 end-->
+
+		<script src="./js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			$('.certificate h3 a').on('click', function(e) {
+				e.preventDefault();
+				$(this).addClass('current').siblings().removeClass('current');
+				$(this.dataset.id).show().siblings().hide();
+			})
+		</script>
+	</body>
+
+</html>

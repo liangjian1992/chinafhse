@@ -34,30 +34,33 @@
 					<div class="form-list">
 						<form action="" id="individualForm" class="none">
 							<p><label for="phone"><span>*</span>手机号：</label>
-								<input type="text" placeholder="请输入手机号" id="phone" /></p>
+								<input type="text" placeholder="请输入手机号" id="individualFormPhone" name="phone" /></p>
 							<p><label for="captcha"><span>*</span>验证码：</label>
-								<input type="password" placeholder="请输入验证码" id="captcha" /></p>
+								<input type="text" placeholder="请输入验证码" id="individualFormCaptcha" name="captcha" /></p>
 							<p><label for="pass"><span>*</span>密码：</label>
-								<input type="password" placeholder="请填写密码" id="pass" /></p>
+								<input type="password" placeholder="请填写密码" id="individualFormPass" name="pass" /></p>
 							<p><label for="again"><span>*</span>确认密码：</label>
-								<input type="password" placeholder="请再次填写密码" id="again" /></p>
+								<input type="password" placeholder="请再次填写密码" id="individualFormAgain" name="again" /></p>
 							<p><label for=""><span>*</span>您所在区域：</label>
-								<select name="" id="">
+								<select name="province" id="individualFormProvince">
 									<option value="">省</option>
+									<option value="北京">北京</option>
 								</select>
-								<select name="" id="">
+								<select name="city" id="individualFormCity">
 									<option value="">市</option>
+									<option value="北京">北京</option>
 								</select>
-								<select name="" id="">
+								<select name="area" id="individualFormArea">
 									<option value="">区</option>
+									<option value="昌平区">昌平区</option>
 								</select>
 							</p>
 							<p><label for="idCard"><span>*</span>身份证号：</label>
-								<input type="text" placeholder="请输入身份证号" id="idCard" /></p>
+								<input type="text" placeholder="请输入身份证号" id="individualFormIdCard" name="idCard" /></p>
 							<p><label for="username"><span>*</span>您的姓名：</label>
-								<input type="text" placeholder="您的真实名字" id="username" /></p>
+								<input type="text" placeholder="您的真实名字" id="individualFormUsername" name="username" /></p>
 							<p class="btn"><button>立即登录</button></p>
-							<p><input type="checkbox" name="" id="checkbox" value="" checked /><label for="checkbox" class="label-checkbox">我已阅读并接受</label>
+							<p><input type="checkbox" name="checkbox" id="individualFormCheckbox" value="" checked /><label for="checkbox" class="label-checkbox">我已阅读并接受</label>
 								<a href="#" class="fr server-list">《服务条款》</a>
 							</p>
 
@@ -65,38 +68,45 @@
 						<form action="" id="enterpriseForm">
 							<h4>管理员信息</h4>
 							<p><label for="username"><span>*</span>用户名(管理员账号)：</label>
-								<input type="text" placeholder="请填写有效的邮箱地址" id="username" /></p>
+								<input type="text" placeholder="请填写有效的邮箱地址" id="enterpriseFormUser" name="user" /></p>
 							<p><label for="password"><span>*</span>密码：</label>
-								<input type="password" placeholder="请填写密码" id="password" /></p>
+								<input type="password" placeholder="请填写密码" id="enterpriseFormPassword" name="pass" /></p>
 							<p><label for="again"><span>*</span>确认密码：</label>
-								<input type="password" placeholder="请再次填写密码" id="again" /></p>
+								<input type="password" placeholder="请再次填写密码" id="enterpriseFormAgain" name="again" /></p>
 							<p><label for="enterprise"><span>*</span>企业名称：</label>
-								<input type="text" placeholder="请与企业营业执照注册名称保持一致" id="enterprise" /></p>
+								<input type="text" placeholder="请与企业营业执照注册名称保持一致" id="enterpriseFormEnterprise" name="enterprise" /></p>
 							<p><label for=""><span>*</span>您所在区域：</label>
-								<select name="" id="">
+								<select name="province" id="enterpriseFormProvince">
 									<option value="">省</option>
+									<option value="北京">北京</option>
 								</select>
-								<select name="" id="">
+								<select name="city" id="enterpriseFormCity">
 									<option value="">市</option>
+									<option value="北京">北京</option>
 								</select>
-								<select name="" id="">
+								<select name="area" id="enterpriseFormArea">
 									<option value="">区</option>
+									<option value="海淀区">海淀区</option>
 								</select>
 							</p>
 							<h4>学员信息</h4>
 							<p><label for="phone"><span>*</span>手机号(学员账号)：</label>
-								<input type="text" placeholder="请输入手机号" id="phone" /></p>
+								<input type="text" placeholder="请输入手机号" id="enterpriseFormPhone" name="phone" /></p>
 							<p><label for="captcha"><span>*</span>验证码：</label>
-								<input type="text" placeholder="请输入验证码" id="captcha" /></p>
+								<input type="text" placeholder="请输入验证码" id="enterpriseFormCaptcha" name="captcha" /></p>
 							<p><label for="name"><span>*</span>学员姓名：</label>
-								<input type="text" placeholder="请输入学员姓名" id="name" /></p>
+								<input type="text" placeholder="请输入学员姓名" id="enterpriseFormName" name="name" /></p>
 							<p><label for="idCard"><span>*</span>身份证号：</label>
-								<input type="text" placeholder="请输入身份证号" id="idCard" /></p>
+								<input type="text" placeholder="请输入身份证号" id="enterpriseFormIdCard" name="idCard" /></p>
 							<p class="btn"><button>立即登录</button></p>
-							<p><input type="checkbox" name="" id="checkbox" value="" checked /><label for="checkbox" class="label-checkbox">我已阅读并接受</label>
+							<p>
+								<input type="checkbox" name="checkbox" id="enterpriseFormCheckbox" value="" checked />
+								<label for="checkbox" class="label-checkbox">我已阅读并接受</label>
 								<a href="#" class="fr server-list">《服务条款》</a>
 							</p>
-							<div class="help"><a href="#"><img src="img/to-b_help.png"/></a></div>
+							<div class="help">
+								<a href="#"><img src="img/to-b_help.png" /></a>
+							</div>
 						</form>
 					</div>
 				</div>
@@ -112,12 +122,245 @@
 		<!--底部样式 end-->
 
 		<script src="./js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--引入官方推荐的组件，对组别信息进行管理-->
+		<script src="js/additional-methods.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$('.main h3 a').on('click', function(e) {
-				e.preventDefault();
-				$(this).addClass('on').siblings().removeClass('on');
-				$(this.dataset.id).show().siblings().hide();
-			})
+			+ function($) {
+				//用户注册选项卡功能切换
+				$('.main h3 a').on('click', function(e) {
+					e.preventDefault();
+					$(this).addClass('on').siblings().removeClass('on');
+					$(this.dataset.id).show().siblings().hide();
+				});
+				//用户表单验证(添加手机自定义验证)
+				$.validator.addMethod('isMobile', function(value, element) {
+					let length = value.length;
+					let mobile = /^(13[0-9]{9})|(18[0-9]{9})|(14[0-9]{9})|(17[0-9]{9})|(15[0-9]{9})$/;
+					return(length == 11 && mobile.test(value));
+				}, '请正确填写您的手机号码');
+				$.validator.addMethod('isIDCard', function(value, element) {
+					let IDCard = /^(\d{15}$|^\d{18}$|^\d{17}(\d|X|x))$/;
+					return IDCard.test(value);
+				}, '请正确填写您的身份证号码');
+				$.validator.addMethod('isEmail', function(value, element) {
+					let Email = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+$/;
+					return Email.test(value);
+				}, '请正确填写您的邮箱地址');
+
+				$('#individualForm').validate({
+					//表示当输入框失去焦点的时候验证该文本框的内容
+					onfocusout: function(element) {
+						$(element).siblings().filter('label.error').remove();
+						//失去焦点进行验证的时候先将错误信息删除，避免用户第一次输入成功，然后对输入内容进行修改的情况发生
+						if(!$(element).is(":checkbox")) {
+							$(element).valid();
+						};
+					},
+					//针对复选框进行验证
+					onclick: function(element) {
+						//因为错误信息在验证成功后添加到当前验证信息的后面，所以需要通过过滤后一个元素是否带有error类，来进行删除
+						$(element).siblings().filter('label.error').remove();
+						$(element).valid();
+					},
+					//表示关闭键盘按下就立即验证文本框内容
+					onkeyup: false,
+					groups: {
+						range: 'province city area'
+					},
+					//表示当前文本框验证完毕后执行的回调函数
+					success: function(label) {
+						label.addClass('success').text('✔');
+					},
+					//设置每个字段的验证规则
+					rules: {
+						phone: {
+							required: true,
+							minlength: 11,
+							//使用手机自定义验证
+							isMobile: true
+						},
+						captcha: {
+							required: true,
+							remote: {
+								url: 'captcha.php',
+								type: 'post',
+								dataType: 'json',
+								data: {
+									//官方文档规定：data数据的获取必须通过function来进行执行，否则不生效
+									captcha: function() {
+										return $('#individualFormCaptcha').val();
+									}
+								}
+							}
+						},
+						pass: {
+							required: true,
+							minlength: 6
+						},
+						again: {
+							required: true,
+							equalTo: "#individualFormPass"
+						},
+						idCard: {
+							required: true,
+							isIDCard: true
+						},
+						username: 'required',
+						checkbox: 'required',
+						province: {
+							required: true,
+							//将省、市、区进行编组，进行管理，并且三个组员信息必须都满足
+							require_from_group: [3, 'select']
+						},
+						city: {
+							required: true,
+							require_from_group: [3, 'select']
+						},
+						area: {
+							required: true,
+							require_from_group: [3, 'select']
+						}
+					},
+					messages: {
+						user: {
+							required: '请填写您的邮箱',
+							isEmail: '邮箱格式不正确'
+						},
+						phone: {
+							required: '请填写手机号',
+							minlength: '请填写11位手机号'
+						},
+						captcha: {
+							required: '请填写验证码',
+							remote: '验证码错误'
+						},
+						pass: {
+							required: '请输入密码',
+							minlength: '请输入6位以上密码'
+						},
+						again: {
+							required: '请再次输入密码',
+							equalTo: '两次输入密码不同，请重新输入'
+						},
+						idCard: '请填写您的身份证号码',
+						username: '请输入您的姓名',
+						checkbox: '请阅读《服务条款》',
+						province: '请选择完整区域信息',
+						city: '请选择完整区域信息',
+						area: '请选择完整区域信息',
+					}
+				});
+				$('#enterpriseForm').validate({
+					//表示当输入框失去焦点的时候验证该文本框的内容
+					onfocusout: function(element) {
+						$(element).siblings().filter('label.error').remove();
+						//失去焦点进行验证的时候先将错误信息删除，避免用户第一次输入成功，然后对输入内容进行修改的情况发生
+						if(!$(element).is(":checkbox")) {
+							$(element).valid();
+						};
+					},
+					//针对复选框进行验证
+					onclick: function(element) {
+						//因为错误信息在验证成功后添加到当前验证信息的后面，所以需要通过过滤后一个元素是否带有error类，来进行删除
+						$(element).siblings().filter('label.error').remove();
+						$(element).valid();
+					},
+					//表示关闭键盘按下就立即验证文本框内容
+					onkeyup: false,
+					groups: {
+						range: 'province city area'
+					},
+					//表示当前文本框验证完毕后执行的回调函数
+					success: function(label) {
+						label.addClass('success').text('✔');
+					},
+					//设置每个字段的验证规则
+					rules: {
+						user: {
+							required: true,
+							isEmail: true
+						},
+						enterprise: 'required',
+						phone: {
+							required: true,
+							minlength: 11,
+							//使用手机自定义验证
+							isMobile: true
+						},
+						captcha: {
+							required: true,
+							remote: {
+								url: 'captcha.php',
+								type: 'post',
+								dataType: 'json',
+								data: {
+									//官方文档规定：data数据的获取必须通过function来进行执行，否则不生效
+									captcha: function() {
+										return $('#individualFormCaptcha').val();
+									}
+								}
+							}
+						},
+						pass: {
+							required: true,
+							minlength: 6
+						},
+						again: {
+							required: true,
+							equalTo: "#enterpriseFormPassword"
+						},
+						idCard: {
+							required: true,
+							isIDCard: true
+						},
+						name: 'required',
+						checkbox: 'required',
+						province: {
+							required: true,
+							//将省、市、区进行编组，进行管理，并且三个组员信息必须都满足
+							require_from_group: [3, 'select']
+						},
+						city: {
+							required: true,
+							require_from_group: [3, 'select']
+						},
+						area: {
+							required: true,
+							require_from_group: [3, 'select']
+						}
+					},
+					messages: {
+						user: {
+							required: '请输入您的邮箱',
+							email: '邮箱格式不正确'
+						},
+						enterprise: '请输入您的企业名称',
+						phone: {
+							required: '请填写手机号',
+							minlength: '请填写11位手机号'
+						},
+						captcha: {
+							required: '请填写验证码',
+							remote: '验证码错误'
+						},
+						pass: {
+							required: '请输入密码',
+							minlength: '请输入6位以上密码'
+						},
+						again: {
+							required: '请再次输入密码',
+							equalTo: '两次输入密码不同，请重新输入'
+						},
+						idCard: '请填写您的身份证号码',
+						name: '请输入您的姓名',
+						checkbox: '请阅读《服务条款》',
+						province: '请选择完整区域信息',
+						city: '请选择完整区域信息',
+						area: '请选择完整区域信息',
+					}
+				});
+			}(jQuery)
 		</script>
 	</body>
 
