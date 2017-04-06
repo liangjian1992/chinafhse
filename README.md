@@ -370,6 +370,7 @@ pagination：[github地址](https://github.com/esimakin/twbs-pagination)
 ## 在线客服
 
 + CSS3解决滑动效果
++ 接入QQ在线客服系统
 
 ``` HTML
 	<div class="online">
@@ -437,6 +438,15 @@ pagination：[github地址](https://github.com/esimakin/twbs-pagination)
 			$('.online .panel').removeClass('fade');
 		})
 	}(jQuery)
+```
+
+接入QQ在线客服：[QQ推广](http://shang.qq.com/v3/widget.html)
+
+在页面设置相关样式，然后直接将生成的代码复制粘贴到项目中即可，如没有特殊要求，直接使用即可
+
+``` HTML
+	<!--QQ推广生成的代码，直接到放到项目中就可以调用本地QQ来进行与客服联系了-->
+	<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1324466276&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:1324466276:51" alt="点击这里给我发消息" title="点击这里给我发消息" /></a>
 ```
 
 ## 关于我们要点
