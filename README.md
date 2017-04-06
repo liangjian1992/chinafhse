@@ -439,5 +439,53 @@ pagination：[github地址](https://github.com/esimakin/twbs-pagination)
 	}(jQuery)
 ```
 
+## 关于我们要点
 
++ 选项卡切换更改面包屑内容
++ 高德地图接入
 
+选项卡切换同时更改面包屑内容
+
+``` JS
+	+function($){
+		//关于我们选项卡功能实现
+		$('.about .about-title li').on('click', function() {
+			$(this).addClass('on').siblings().removeClass('on');
+			$(this.dataset.role).show().siblings().hide();
+			//缓存当前点击的选项卡内容
+			let currentPage = $(this).children()[0].text;
+			//找到对应的标签并设置内容
+			$('.breadcrumb p a')[1].text = currentPage;
+		});
+	}(jQuery)
+```
+
+高德地图介入：关于地图中需要的经纬度，可以通过[拾取坐标系统](http://api.map.baidu.com/lbsapi/getpoint/index.html)或者[在线地图经纬度查询](http://www.gpsspg.com/maps.htm)来进行获取
+
+``` JS
+	+function($){
+		//初始化高德地图，HTML中容器一定要设置id属性，new AMap.Map('容器id'，{配置项})
+		var map = new AMap.Map('map', {
+			//地图方法比例
+			zoom: 20,
+			//展示地图的中心点
+			center: [116.355375, 39.890723]
+		});
+		//mark标记初始化
+		var marker = new AMap.Marker({
+			//标记在地图中的位置
+			position: new AMap.LngLat(116.355375, 39.890723),
+			//标记偏移位置
+			offset: new AMap.Pixel(-9, -31),
+			//鼠标移动到标记上显示的文字
+			title: '中安汇金',
+			//初始化一个标记
+			icon: new AMap.Icon({
+				//设置标记的大小
+				size: new AMap.Size(128, 128)
+			}),
+			//将标记挂载到地图上面
+			map: map
+		});
+	}(jQuery)
+```
