@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/*课程问题样式*/
+.problem{
+	font-size: 14px;
+}
+.problem .container{
+	width: 1060px;
+}
+.problem h4{
+	font-size: 20px;
+	margin: 30px 0;
+}
+.problem p{
+	text-indent: 2em;
+	line-height: 28px;
+	margin: 10px 0;
+}
