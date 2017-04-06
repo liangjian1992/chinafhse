@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*服务条款样式*/
+.server .container{
+	width: 1060px;
+	font-size: 14px;
+}
+.server h3{
+	font-size: 36px;
+	text-align: center;
+	margin: 30px 0;
+}
+.server h4{
+	font-size: 22px;
+	margin: 20px 0;
+}
+.server h5{
+	font-weight: bold;
+}
+.server p{
+	line-height: 30px;
+	margin: 20px 0;
+}
