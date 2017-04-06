@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/*关于我们样式*/
+
+.about {
+	font-size: 16px;
+	margin: 50px 0 50px;
+	min-height: 500px;
+}
+
+.about .container {
+	width: 1060px;
+}
+
+.about a {
+	font-size: 16px;
+	color: #818282;
+}
+
+.about .about-title {
+	width: 180px;
+	background: #f5f5f5;
+}
+
+.about .about-title li {
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: 1px dashed #ddd;
+	border-left: 2px solid transparent;
+}
+
+.about .about-title li:hover,
+.about .about-title li.on {
+	border-left-color: #0b57a3;
+	background: #fff;
+}
+
+.about .about-title a {
+	display: block;
+}
+
+.about .about-detail {
+	margin-left: 250px;
+	margin-right: 20px;
+}
+
+.about .about-detail h3 {
+	font-size: 30px;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.about .about-detail p {
+	line-height: 30px;
+	font-size: 14px;
+	text-indent: 2em;
+}
+
+.about .about-detail img {
+	vertical-align: middle;
+	margin-top: 15px;
+}
+
+.about .about-detail h4 {
+	font-size: 20px;
+}
+
+.about .about-detail-callus ul {
+	margin-top: 40px;
+}
+
+.about .about-detail-callus li {
+	line-height: 30px;
+}
