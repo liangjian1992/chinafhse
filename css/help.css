@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*企业用户操作样式*/
+.help{
+	text-align: center;
+}
+.help img{
+	vertical-align: middle;
+}
+.help .banner{
+	background: url(../img/b_banner_bg.jpg);
+}
+.help .content div:nth-child(even){
+	background: #f5f5f5;
+}
+.help .content div{
+	padding: 30px 0;
+}
+.help .content p{
+	font-size: 24px;
+	color: #333;
+	margin: 30px 0;
+}
