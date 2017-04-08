@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/*课程详情样式*/
+
+.courseshow .container {
+	width: 1060px;
+	font-size: 14px;
+}
+
+.courseshow .title {
+	margin-bottom: 30px;
+}
+
+.courseshow .title-content {
+	margin-left: 400px;
+}
+
+.container .title-content h3 {
+	font-size: 30px;
+	margin: 20px 0;
+}
+
+.container .title-content p {
+	line-height: 30px;
+}
+
+.container .title-content button {
+	border: none;
+	width: 200px;
+	height: 50px;
+	background: #2984e1;
+	color: #fff;
+	font-size: 20px;
+	box-shadow: 0 -5px 5px lightblue inset;
+	float: right;
+}
+
+.container .detail .detail-list {
+	width: 750px;
+}
+
+.container .detail .detail-list>p,
+.container .detail-collection>p {
+	height: 48px;
+	line-height: 48px;
+	border: 1px solid #ddd;
+	background: #f6f6f6;
+	margin-bottom: 20px;
+}
+
+.container .detail-list p>a{
+	float: left;
+	width: 140px;
+	text-align: center;
+}
+.container .detail-collection p>a{
+	float: left;
+	width: 50%;
+	text-align: center;
+	border-right: 1px solid #ddd;
+	box-sizing: border-box;
+}
+.container .detail-collection p a:first-child{
+	border-right: 1px solid #ddd;
+}
+
+.container .detail-list a.on {
+	font-size: 18px;
+	color: #000;
+	background: #fff;
+}
+
+.container #info h5 {
+	font-weight: bold;
+	font-size: 14px;
+	margin: 10px 0;
+}
+
+.container #info p {
+	font-size: 12px;
+	text-indent: 2em;
+	line-height: 24px;
+	margin: 10px 0;
+}
+
+.container table {
+	width: 100%;
+	text-align: center;
+}
+
+.container #dirname thead tr {
+	background: #f5f6fa;
+	border-bottom: 2px solid #ddd;
+	height: 36px;
+	line-height: 38px;
+}
+
+.container #dirname tbody tr {
+	height: 49px;
+	border-bottom: 1px dashed #ddd;
+	line-height: 50px;
+}
+
+.container table td:first-child {
+	text-align: left;
+}
+
+.container .detail-collection {
+	width: 275px;
+	text-align: center;
+}
+
+.container .detail-collection dl {
+	padding: 20px;
+}
+
+.container .detail-collection dt {
+	margin: 10px;
+}
+
+.container .detail-collection img {
+	border-radius: 5px;
+}
+#share.share{
+	display: block !important;
+	position: fixed;
+	bottom: 50%;
+	right: -30px;
+	width: 300px;
+}
