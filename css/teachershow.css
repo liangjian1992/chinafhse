@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/*讲师详情样式*/
+.teachershow .container{
+	width: 1060px;
+	font-size: 12px;
+	min-height: 500px;
+	padding-bottom: 30px;
+}
+.teachershow .content{
+	margin-left: 300px;
+	padding-top: 40px;
+}
+.teachershow .title{
+	margin-top: 40px;
+}
+.teachershow .content h5{
+	font-size: 16px;
+	color: #0b57a3;
+	border-bottom: 1px solid #0b57a3;
+	padding: 10px 0;
+}
+.teachershow .content h6{
+	font-size: 14px;
+	padding: 10px 0;
+}
+.teachershow .content p{
+	text-indent: 2em;
+	line-height: 24px;
+}
