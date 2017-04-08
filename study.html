@@ -18,10 +18,10 @@
 					<div class="img">
 						<h2>中国食品安全教育第一品牌</h2>
 						<p>主要培训项目</p>
-						<img src="img/pic0.jpg"/>
-						<img src="img/pic1.gif"/>
-						<img src="img/pic2.gif"/>
-						<img src="img/pic3.gif"/>
+						<img src="img/pic0.jpg" />
+						<img src="img/pic1.gif" />
+						<img src="img/pic2.gif" />
+						<img src="img/pic3.gif" />
 					</div>
 					<div class="tab">
 						<h2>平台核心功能</h2>
@@ -36,18 +36,16 @@
 			<div class="section second">
 				<h2>操作指南</h2>
 				<video id="video" width="750" height="" controls>
-					<source src="test.ogg" type="video/mp4"></source>
-					<source src="test.ogg" type="video/ogg"></source>
-					<source src="test.ogg" type="video/webm"></source>
+					<!--<source src="test.ogg" type="video/mp4"></source>-->
+					<source src="http://china.mrprofessor.top/test.ogg" type="video/ogg"></source>
+					<!--<source src="test.ogg" type="video/webm"></source>-->
 					<object width="" height="" type="application/x-shockwave-flash" data="test.ogg">
 						<param name="movie" value="test.ogg" />
 						<param name="flashvars" value="autostart=true&amp;file=test.ogg" />
-					</object>
-					当前浏览器不支持 请升级浏览器
+					</object> 当前浏览器不支持 请升级浏览器
 				</video>
 			</div>
 		</div>
-		
 
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
@@ -65,21 +63,38 @@
 				const currentTime = 100;
 				//全屏效果
 				$('#fullpage').fullpage({
-					navigation:true,
-					afterLoad:function(anchorLink,index){
-						if(index === 2){
-							if(video.currentTime > currentTime){
-								
-							}else{
+					navigation: true,
+					navigationPosition: 'left',
+					afterRender: function() {
+						let data = [
+							{ desc: '平台概述' },
+							{ desc: '操作指南' },
+							{ desc: '注册登录' },
+							{ desc: '报名缴费' },
+							{ desc: '在线学习' },
+							{ desc: '在线考试' },
+							{ desc: '在线查询' },
+							{ desc: '开始学习' }
+						];
+						$('#fp-nav a').each(function(index, item) {
+							item.innerHTML = '<span></span>' + data[index].desc;
+						});
+
+					},
+					afterLoad: function(anchorLink, index) {
+						if(index === 2) {
+							if(video.currentTime > currentTime) {
+
+							} else {
 								video.currentTime = currentTime;
-							}
-							video.playbackRate = 2;
+							};
 							video.play();
-						}else{
+						} else {
 							video.pause();
 						}
 					}
 				});
+
 			}(jQuery)
 		</script>
 	</body>

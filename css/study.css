@@ -52,3 +52,9 @@
 	border: 10px solid #fff;
 	border-radius: 10px;
 }
+#fp-nav ul li a{
+	width: 100px !important;
+	padding-left: 20px;
+	color: #fff;
+	font-size: 14px;
+}
