@@ -524,3 +524,51 @@ pagination：[github地址](https://github.com/esimakin/twbs-pagination)
 	</div>
 	<!--分享功能 end-->
 ```
+
+## 个人中心上传图片预览
++ window.FileReader
+
+```HTML
+	<form action="/" method="post" enctype="multipart/form-data">
+			<p>
+				<label for="">个人头像</label>
+				<img id="personal" />
+			</p>
+			<p>上传头像
+				<!--通过data-target来与img标签进行关联-->
+				<input type="file" name="personal" id="" value="" data-target="#personal" />
+			</p>
+			<p>
+				<label for="">免冠照</label>
+				<img id="photo" />
+			</p>
+			<p>上传免冠照
+				<!--通过data-target来与img标签进行关联-->
+				<input type="file" name="photo" id="" value="" data-target="#photo" />
+			</p>
+			<p class="btn"><button>保存</button></p>
+		</form>
+```
+
+```JS
+	//照片上传预览功能
+	//给上传文本框注册change事件
+	$('input[type=file]').on('change', function() {
+		//获取上传的文件对象
+		var file = this.files[0];
+		//缓存当前的this指针
+		var _this = this;
+		//检测浏览器是否支持FileReader
+		if(window.FileReader) {
+			//实例化FileReader
+			var fr = new FileReader();
+			//注册onloadend事件，图片上传完毕触发
+			fr.onloadend = function(e) {
+				//通过自有属性获取到img标签，进行设置标签的src路径，可以在事件对象中获取到src
+				$(_this.dataset.target).attr('src', e.target.result);
+			}
+			//通过FileReader将文件编码成Data URL形式，内嵌到网页中
+			fr.readAsDataURL(file);
+		}
+	});
+```
