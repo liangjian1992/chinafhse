@@ -1,0 +1,293 @@
+@charset "utf-8";
+
+/*个人中心样式*/
+
+.common-nav .user-info {
+	top: 50px;
+	right: 0;
+	width: 300px;
+	height: 150px;
+	box-shadow: 3px 3px 5px #ccc;
+	background: #fff;
+	z-index: 1000;
+	display: none;
+}
+
+.common-nav .user-head {
+	background: radial-gradient(#ccc, #ddd, #eee);
+	width: 300px;
+	height: 100px;
+}
+
+.common-nav .user-body {
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+.common-nav .user-info a {
+	color: #000;
+	font-size: 12px;
+}
+
+.common-nav .wrap:hover .user-info {
+	display: block;
+}
+
+.usercenter .usercenter-detail {
+	margin-left: 250px;
+	margin-right: 20px;
+}
+
+.usercenter {
+	font-size: 16px;
+	margin: 50px 0 50px;
+	min-height: 500px;
+}
+
+.usercenter .container {
+	width: 1060px;
+}
+
+.usercenter a {
+	font-size: 16px;
+	color: #666;
+}
+
+.usercenter .usercenter-title {
+	width: 200px;
+	text-align: center;
+}
+
+.usercenter .usercenter-title .usercenter-logo {
+	margin-bottom: 40px;
+}
+
+.usercenter .usercenter-title dl {
+	margin: 20px 25px;
+}
+
+.usercenter .usercenter-title dl dt {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.usercenter dl dd {
+	line-height: 34px;
+}
+
+.usercenter dl dd.on a {
+	color: red;
+}
+
+.usercenter .usercenter-detail h3 {
+	font-size: 14px;
+	color: #003399;
+	border-bottom: 1px solid #003399;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+
+.usercenter .usercenter-detail>div {
+	display: none;
+}
+
+
+/*消息中心*/
+
+.usercenter #usercenter-message {
+	display: block;
+}
+
+.usercenter #usercenter-message ul {
+	padding: 10px;
+}
+
+.usercenter #usercenter-message ul li {
+	border-bottom: 1px dashed #ccc;
+	padding: 10px;
+}
+
+.usercenter #usercenter-message ul li h4 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 32px;
+}
+
+
+/*我的提问*/
+
+.usercenter table {
+	text-align: center;
+	width: 100%;
+}
+
+.usercenter thead {
+	background: #eee;
+	border-bottom: 1px solid #0060BF;
+}
+
+.usercenter thead tr {
+	line-height: 38px;
+	border: 1px solid #ccc;
+}
+
+.usercenter th {
+	font-weight: bold;
+}
+
+.usercenter tbody tr {
+	line-height: 38px;
+	border: 1px solid #ccc;
+}
+
+.usercenter table td {
+	vertical-align: middle;
+}
+
+.usercenter tbody tr:nth-child(odd) {
+	background: #EEEEEE;
+}
+
+
+/*购买记录*/
+
+.usercenter #usercenter-task form {
+	width: 100%;
+	height: 80px;
+	text-align: center;
+}
+
+.usercenter #usercenter-task input {
+	width: 330px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	vertical-align: middle;
+}
+
+.usercenter #usercenter-task button {
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	background: #000066;
+	padding: 8px 20px;
+	margin-left: 30px;
+	font-size: 16px;
+	outline: none;
+}
+
+
+/*课程管理*/
+
+.usercenter #usercenter-class .usercenter-class-list-detail {
+	margin-left: 230px;
+}
+
+.usercenter #usercenter-class .usercenter-class-list h6 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 32px;
+	height: 32px;
+}
+
+.usercenter #usercenter-class .usercenter-class-list p {
+	line-height: 30px;
+	font-size: 12px;
+	color: #9D9D9D;
+}
+
+.usercenter #usercenter-class .usercenter-class-list-detail button {
+	border: 1px solid #0062CC;
+	background: transparent;
+	color: #0062CC;
+	padding: 5px 10px;
+}
+
+
+/*用户设置*/
+
+.usercenter #usercenter-config form {
+	width: 100%;
+	padding-top: 30px;
+}
+.usercenter #usercenter-config form img{
+	width: 100px;
+	height: 100px;
+	border: 1px solid #ccc;
+	vertical-align: top;
+}
+
+.usercenter #usercenter-config form label {
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+}
+
+.usercenter #usercenter-config form label.gender {
+	width: 20px;
+	text-align: center;
+}
+
+.usercenter #usercenter-config form input[type=text] {
+	vertical-align: middle;
+	width: 350px;
+	height: 34px;
+	padding-left: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.usercenter form input{
+	outline: none;
+}
+
+.usercenter #usercenter-config form p {
+	line-height: 48px;
+	position: relative;
+}
+
+.usercenter #usercenter-config form p.btn {
+	padding-left: 300px;
+}
+
+.usercenter #usercenter-config button {
+	width: 88px;
+	height: 34px;
+	border: none;
+	border-radius: 5px;
+	background: #003399;
+	color: #fff;
+	outline: none;
+}
+
+.usercenter #usercenter-config .usercenter-config-detail {
+	padding: 20px;
+}
+
+.usercenter #usercenter-config .usercenter-config-detail>p {
+	width: 100%;
+	background: #eee;
+	height: 38px;
+	line-height: 38px;
+	padding-left: 30px;
+}
+
+.usercenter #usercenter-config .usercenter-config-detail>p a {
+	margin: 0 10px;
+	color: #000;
+}
+
+.usercenter #usercenter-config .usercenter-config-detail>p a.on {
+	color: #0062CC;
+}
+label.error{
+	position: absolute;
+	line-height: 14px;
+	width: 200px !important;
+	top: 50%;
+	left: 460px;
+	transform: translateY(-50%);
+	text-align: left !important;
+	color: red;
+}
