@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+/*购买课程样式*/
+
+.common-nav .user-info {
+    top: 50px;
+    right: 0;
+    width: 300px;
+    height: 150px;
+    box-shadow: 3px 3px 5px #ccc;
+    background: #fff;
+    z-index: 1000;
+    display: none;
+}
+
+.common-nav .user-head {
+    background: -webkit-radial-gradient(#ccc, #ddd, #eee);
+    background: radial-gradient(#ccc, #ddd, #eee);
+    width: 300px;
+    height: 100px;
+}
+
+.common-nav .user-body {
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.common-nav .user-info a {
+    color: #000;
+    font-size: 12px;
+}
+
+.common-nav .wrap:hover .user-info {
+    display: block;
+}
+
+.buyclass {
+    min-height: 500px;
+}
+
+.buyclass .container {
+    width: 1060px;
+    margin-top: 50px;
+}
+
+.buyclass .buyclass-title {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.buyclass .buyclass-title strong {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 20px;
+    color: #999;
+}
+
+.buyclass .buyclass-title strong.on {
+    color: #0063ee;
+}
+
+.buyclass .buyclass-title strong.on::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #0062ee;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -5px;
+}
+
+.buyclass ul {
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+.buyclass ul li {
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.buyclass ul li:last-child {
+    border-bottom: none;
+}
+
+.buyclass ul a {
+    color: #666666;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+    margin: 0 10px;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+.buyclass ul .active {
+    color: #fff;
+    background: #0b57a3;
+}
+
+.buyclass-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+}
+
+.buyclass-list {
+    min-width: 500px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.buyclass-list-detail {
+    margin-left: 180px;
+}
+
+.buyclass-list h6 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 32px;
+    height: 32px;
+}
+
+.buyclass-list p {
+    line-height: 30px;
+    font-size: 12px;
+    color: #9D9D9D;
+}
+
+.buyclass-list-detail button {
+    border: 1px solid #0062CC;
+    background: transparent;
+    color: #0062CC;
+    padding: 5px 10px;
+}

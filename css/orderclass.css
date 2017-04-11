@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/*课程订单样式*/
+
+.common-nav .user-info {
+    top: 50px;
+    right: 0;
+    width: 300px;
+    height: 150px;
+    box-shadow: 3px 3px 5px #ccc;
+    background: #fff;
+    z-index: 1000;
+    display: none;
+}
+
+.common-nav .user-head {
+    background: -webkit-radial-gradient(#ccc, #ddd, #eee);
+    background: radial-gradient(#ccc, #ddd, #eee);
+    width: 300px;
+    height: 100px;
+}
+
+.common-nav .user-body {
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.common-nav .user-info a {
+    color: #000;
+    font-size: 12px;
+}
+
+.common-nav .wrap:hover .user-info {
+    display: block;
+}
+
+.orderclass {
+    min-height: 500px;
+}
+
+.orderclass .container {
+    width: 1060px;
+    margin-top: 50px;
+}
+
+.orderclass .orderclass-title {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.orderclass .orderclass-title strong {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 20px;
+    color: #999;
+}
+
+.orderclass .orderclass-title strong.on {
+    color: #0063ee;
+}
+
+.orderclass .orderclass-title strong.on::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #0062ee;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -5px;
+}
+
+.orderclass table {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.orderclass table tr.bg {
+    background: #eee;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.orderclass table td, .orderclass table th {
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+}
+
+.orderclass table button {
+    border: none;
+    background: #476fe8;
+    color: #fff;
+    padding: 5px;
+    margin-left: 10px;
+    outline: none;
+}

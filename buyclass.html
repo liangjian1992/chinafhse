@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>中安食品安全培训网</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/buyclass.css" />
+		<link rel="shortcut icon" href="img/favicon.png" />
+	</head>
+
+	<body>
+		<!--公共导航 start-->
+		<div class="common-nav">
+			<div class="container">
+				<div class="nav fl">
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="course.html">课程中心</a>
+						</li>
+						<li>
+							<a href="teacher.html">师资力量</a>
+						</li>
+						<li>
+							<a href="certificate.html">在线查询</a>
+						</li>
+						<li>
+							<a href="news.html">新闻法规</a>
+						</li>
+						<li class="active">
+							<a href="usercenter.html">用户中心</a>
+						</li>
+					</ul>
+				</div>
+				<div class="login fr">
+					<div class="wrap pr">
+
+						<a href="#"><img src="img/logreg.png" /></a>
+						<div class="user-info pa">
+							<div class="user-head"></div>
+							<div class="user-body">
+								<a href="r_password.html" class="fl">修改密码</a>
+								<a href="#" class="fr">退出</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--公共导航 end-->
+
+		<!-- 购买课程 start -->
+		<div class="buyclass">
+			<div class="container">
+				<div class="buyclass-title">
+					<strong class="on">选择课程</strong>
+					<strong>提交订单</strong>
+				</div>
+				<div class="buyclass-nav">
+					<ul>
+						<li>按培训类别：
+							<a href="#" class="active">全部</a>
+							<a href="#">食品安全管理员</a>
+							<a href="#">食品从业人员</a>
+							<a href="#">食品安全监管人员</a>
+							<a href="#">食品去也人员</a>
+						</li>
+						<li>按行业领域：
+							<a href="#" class="active">全部</a>
+							<a href="#">流通领域</a>
+							<a href="#">生产领域</a>
+							<a href="#">餐饮领域</a>
+							<a href="#">保健品</a>
+							<a href="#">全行业</a>
+						</li>
+						<li>排序：
+							<a href="#" class="active">最新</a>
+							<a href="#">最热</a>
+						</li>
+					</ul>
+				</div>
+				<div class="buyclass-item">
+
+					<div class="buyclass-list">
+						<div class="fl">
+							<img src="img/pic1.gif" />
+						</div>
+						<div class="buyclass-list-detail">
+							<h6>北京测试班</h6>
+							<p>使用领域：餐饮领域 | 培训类别：食品安全管理员 | 课时：1</p>
+							<p>有效期：2017-04-07 - 2017-04-30</p>
+							<p><button class="fr"><a href="orderclass.html">购买课程</a></button>现价：&yen;0.01 </p>
+						</div>
+					</div>
+					<div class="buyclass-list">
+						<div class="fl">
+							<img src="img/pic1.gif" />
+						</div>
+						<div class="buyclass-list-detail">
+							<h6>北京测试班</h6>
+							<p>使用领域：餐饮领域 | 培训类别：食品安全管理员 | 课时：1</p>
+							<p>有效期：2017-04-07 - 2017-04-30</p>
+							<p><button class="fr"><a href="orderclass.html">购买课程</a></button>现价：&yen;0.01 </p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<!-- 购买课程 end -->
+
+		<!--公共底部 start-->
+		<div class="footer">
+			<p>Copyright &copy; 2016 中安汇金科技（北京）有限公司 版权所有</p>
+		</div>
+		<!--公共底部 end-->
+
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			+ function($) {
+				//菜单导航样式切换功能
+				$('.buyclass li a').on('click', function() {
+					$(this).parent().children().each(function(index, item) {
+						$(item).removeClass('active');
+					})
+					$(this).addClass('active');
+				});
+
+			}(jQuery)
+		</script>
+	</body>
+
+</html>
